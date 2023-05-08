@@ -1,0 +1,28 @@
+*Single inheritance*
+
+using System.IO;
+using System;
+public class A
+{
+    public void read()
+    {
+Console.WriteLine("Based class ");
+    }
+}
+class B:A
+{
+public void display ()
+    {
+Console.WriteLine("Derived  class ");
+    }
+}
+class Program
+{
+    static void Main()
+{
+    B b=new B();
+    b.read();
+    b. display();
+    Console.ReadLine();
+}
+}
