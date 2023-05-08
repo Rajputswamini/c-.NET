@@ -1,0 +1,18 @@
+using System.IO;
+using System;
+
+class demo
+{
+    public  demo()
+    {
+    Console.WriteLine("default constructor called");   
+    }
+}
+class Program 
+{
+    static void Main()
+    {
+       demo d1=new demo();
+       Console.ReadLine();
+    }
+}
