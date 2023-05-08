@@ -1,0 +1,43 @@
+using System.IO;
+using System;
+
+public class demo
+{
+int no, temp, rem, sum=0; 
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+no=Convert.ToInt32(Console.ReadLine());
+}
+public void display()
+{
+for(temp=no;no!=0;no=no/10)
+{
+rem=no%10;
+sum=sum+(rem*rem*rem);
+}
+if(sum==temp)
+{
+Console.WriteLine("numbers is Armstrong  ");
+}
+else
+{
+Console.WriteLine("numbers is not Armstrong ");
+
+}
+}
+
+class Program
+{
+  public  static void Main(string[]args)
+{
+   demo d=new demo();
+   d. read();
+   d. display();
+   Console.ReadLine();
+}
+    }
+}    
+
+
+**Armstrong number **
