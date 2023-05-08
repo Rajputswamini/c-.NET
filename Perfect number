@@ -1,0 +1,43 @@
+using System.IO;
+using System;
+public class demo 
+{
+int number, n, sum=0;
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+number=Convert.ToInt32(Console.ReadLine());
+n=number;
+}
+public void display()
+{
+for(int i=1; i<number;i++)
+{
+if(number%i==0)
+{
+sum=sum+i;
+}
+}
+if(sum==n)
+{
+Console.WriteLine("Given number is prefect ");
+}
+else
+{
+Console.WriteLine("given number is not perfect ");
+}
+}
+
+class Program
+{
+  public   static void Main(string[]args)
+    {
+     demo d=new demo();
+     d. read();
+     d. display();
+     Console. ReadLine();
+    }
+}
+}    
+
+ **prefect number **
