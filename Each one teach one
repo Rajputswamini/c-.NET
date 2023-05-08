@@ -1,0 +1,31 @@
+using System.IO;
+using System;
+public class demo 
+{
+    int i,number;
+    public void read()
+    {
+Console. WriteLine("enter the numbers ");
+number=Convert.ToInt32(Console.ReadLine());
+    }
+public void display()
+{
+for(i=0;i<=number; i++)
+{
+Console. WriteLine("Teach one, Each one, Tree one");
+}
+}
+
+class Program
+{
+    static void Main()
+    {
+        demo d=new demo();
+        d.read();
+        d. display();
+        Console. ReadLine();
+    }
+}
+}
+
+" *Teach one, Each one message print*
