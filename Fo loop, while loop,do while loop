@@ -1,0 +1,106 @@
+using System.IO;
+using System;
+public class demo 
+{
+    int i,no,table;
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+no=Convert.ToInt32(Console.ReadLine());
+}
+public void display()
+{
+for(i=1;i<=10;i++)
+{
+table=no*i;
+Console.WriteLine(table);
+}
+}
+
+class Program
+{
+    static void Main()
+    {
+    demo d=new demo();
+    d. read();
+    d. display();
+    Console.ReadLine();
+    }
+}
+}
+
+ *For loop* 
+
+
+
+
+
+
+using System.IO;
+using System;
+public class demo 
+{
+    int i,no,table;
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+no=Convert.ToInt32(Console.ReadLine());
+}
+public void display()
+{
+    i=1;
+while(i<=10)
+{
+table=no*i;
+Console.WriteLine(table);
+i++;
+}
+}
+
+class Program
+{
+    static void Main()
+    {
+    demo d=new demo();
+    d. read();
+    d. display();
+    Console.ReadLine();
+    }
+}
+} 
+
+ *While loop*
+
+ *Do-while* 
+
+using System;
+public class demo 
+{
+    int i,no,table;
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+no=Convert.ToInt32(Console.ReadLine());
+}
+public void display()
+{
+    i=1;
+do
+{
+table=no*i;
+Console.WriteLine(table);
+i++;
+}while(i<=10);
+}
+
+class Program
+{
+    static void Main()
+    {
+    demo d=new demo();
+    d. read();
+    d. display();
+    Console.ReadLine();
+    }
+}
+}
