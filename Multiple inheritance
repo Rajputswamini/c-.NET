@@ -1,0 +1,35 @@
+using System.IO;
+using System;
+interface demo
+{
+    public void show();
+}
+class demo1
+{
+  public  int a,b,c;
+    public void read()
+    {
+        a=10;
+        b=20;
+    }
+}
+class demo2:demo1,demo
+{
+    public void show()
+    {
+    c=a+b;
+    Console.WriteLine("Additions of :-"+c);
+    }
+}
+public  class interface1
+{
+  public  static void Main(string[]args)
+  {
+        demo2 d2=new demo2();
+        d2.read();
+        d2.show();
+        Console.ReadLine();
+    }
+}     
+
+ *Multiple inheritance*
