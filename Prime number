@@ -1,0 +1,43 @@
+using System.IO;
+using System;
+public class demo 
+{
+int number,i,count=0;
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+number=Convert.ToInt32(Console.ReadLine());
+}
+public void display()
+{
+for(i=1;i<=number; i++)
+{
+if(number%i==0)
+{
+count++;
+}
+}
+if(count==2)
+{
+Console.WriteLine("given number is prime");
+}
+else
+{
+Console.WriteLine("given number is not prime");
+}
+}
+
+class Program
+{
+    public static void Main(string[]args)
+{
+    demo d=new demo();
+    d.read();
+    d. display();
+    Console.ReadLine();
+}
+    
+}
+}
+
+ *Prime number*
