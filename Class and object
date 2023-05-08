@@ -1,0 +1,28 @@
+*Class & object* 
+
+using System.IO;
+using System;
+public class demo 
+{
+public void read()
+{
+Console.WriteLine("read functions called ");
+}
+}
+class demo1:demo
+{
+    public void display()
+    {
+Console.WriteLine("display functions is called");
+    }
+}
+class Program
+{
+    static void Main()
+    {
+        demo1 d1=new demo1();
+        d1. read();
+        d1. display();
+        Console.ReadLine();
+    }
+}
