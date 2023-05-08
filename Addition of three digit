@@ -1,0 +1,38 @@
+using System.IO;
+using System;
+class demo
+{
+    public int n,d,sum;
+    public void read()
+    {
+        Console.Write("enter no ");
+        n=Convert.ToInt32(Console.ReadLine());   
+    }
+}
+class demo1:demo
+{
+    public void show()
+    {              
+        while(n>0)
+        {
+            d=n%10;
+            sum=sum+d;
+            n=n/10;
+        }
+      Console.WriteLine("Add is;-"+sum);
+   }
+}
+ 
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        demo1 d=new demo1();
+        d.read();
+        d.show();
+        Console.ReadLine(); 
+    }
+}
+
+
+ *Additiona of three digits numbers*
