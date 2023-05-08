@@ -1,0 +1,44 @@
+*c#* 
+using System.IO; 
+using System;
+
+public class demo
+{
+int no, temp, rem, sum; 
+public void read()
+{
+Console.WriteLine("enter the numbers ");
+no=Convert.ToInt32(Console.ReadLine());
+}
+public void display()
+{
+temp=no;
+while(no>0)
+{
+rem=no%10;
+sum=(sum*10)+rem; 
+no=no/10;
+}
+if(temp==sum)
+{
+Console.WriteLine("numbers is palindrome ");
+}
+else
+{
+Console.WriteLine("numbers is  not palindrome ");
+
+}
+}
+
+class Program
+{
+  public  static void Main(string[]args)
+{
+   demo d=new demo();
+   d. read();
+   d. display();
+   Console.ReadLine();
+}
+    }
+}
+ *Palindrome number*
