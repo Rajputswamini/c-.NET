@@ -1,0 +1,28 @@
+
+using System.IO;
+using System;
+class demo 
+{
+    int a,b;
+    demo()
+    {
+        a=10;
+        b=20;
+    }
+    demo(demo c)
+    {
+    a=c.a;
+    b=c.b;
+    Console.WriteLine(a+b);
+}
+
+class Program
+{
+  public  static void Main(string[]args)
+    {
+       demo d=new demo();
+       demo d1= new demo(d);
+       Console.ReadLine();
+    }
+}
+}
