@@ -1,0 +1,28 @@
+using System.IO;
+using System;
+class parent
+{
+public virtual void print()
+{
+Console.WriteLine("This is method of parent class");
+    
+}
+
+class child:parent
+{
+    public override void print()
+    {
+    Console.WriteLine("This is method of child class");    }
+}
+class Program
+{
+     public static void Main(string[]args)
+    {
+        parent p=new child()
+        p.parent();
+        Console.ReadLine(); 
+    }
+}
+}
+
+*Method overriding*
