@@ -1,0 +1,57 @@
+*Switch statement using to print months of given number*
+
+
+using System.IO;
+using System;
+public class demo 
+{
+    int month; 
+    public void read()
+    {
+Console. WriteLine("enter number to print months");
+month=Convert.ToInt32(Console.ReadLine());
+    }
+public void display()
+{
+switch(month)
+{
+case 1:Console.WriteLine("January ");
+break;
+case 2:Console.WriteLine("February ");
+break;
+case 3:Console.WriteLine("March ");
+break;
+case 4:Console.WriteLine("Apr ");
+break;
+case 5:Console.WriteLine("May ");
+break;
+case 6:Console.WriteLine("june ");
+break;
+case 7:Console.WriteLine("july ");
+break;
+case 8:Console.WriteLine("August ");
+break;
+case 9:Console.WriteLine("September  ");
+break;
+case 10:Console.WriteLine("October ");
+break;
+case 11:Console.WriteLine("November ");
+break;
+case 12:Console.WriteLine("December  ");
+break;
+default:Console.WriteLine("enter the valid number ");
+break;
+}
+}
+class Program
+{
+  public  static void Main(string[] args)
+    {
+        demo d=new demo();
+        d. read();
+        d.display();
+        Console. ReadLine();
+        
+    }
+}
+}
